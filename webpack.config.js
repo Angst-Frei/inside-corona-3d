@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
     new FaviconsWebpackPlugin({
-      logo: './src/sun.png',
+      logo: './src/inside-corona.jpg',
       prefix: 'favicons/',
     }),
     new HtmlWebpackPlugin({
