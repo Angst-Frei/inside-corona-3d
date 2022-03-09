@@ -1,1 +1,1 @@
-html{font:11px Lucida Grande,sans-serif}body{margin:0}input[type=text]{line-height:13px}input[type=text],select{font:11px Lucida Grande,sans-serif}#graph{height:100vh;margin:0;padding:0;width:100vw}.dg.main .c,.dg.main .property-name{width:50%}
+html{font:11px Lucida Grande,sans-serif}body{margin:0}.top{height:70vh}#bottom{background-color:#fff;height:30vh;margin:10px;overflow:scroll}input[type=text]{line-height:13px}input[type=text],select{font:11px Lucida Grande,sans-serif}#graph{margin:0;padding:0;width:100vw}.dg.main .c,.dg.main .property-name{width:50%}
