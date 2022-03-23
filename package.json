@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production && cp CNAME docs"
+    "dev": "webpack --mode development && webpack --mode development -c webpack.config.visjs.js",
+    "build": "webpack --mode production && cp CNAME docs && webpack --mode production -c webpack.config.visjs.js"
   },
   "keywords": [],
   "author": "",
