@@ -21,7 +21,7 @@
     "http-server": "^14.1.0",
     "mini-css-extract-plugin": "^2.6.0",
     "npm-check-updates": "",
-    "sass": "^1.49.9",
+    "sass": "^1.49.10",
     "sass-loader": "^12.6.0",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
@@ -30,7 +30,8 @@
   "dependencies": {
     "3d-force-graph": "^1.70.9",
     "dat.gui": "^0.7.9",
-    "three": "^0.138.3",
+    "element-resize-detector": "^1.2.4",
+    "three": "^0.139.1",
     "visjs-network": "^4.24.11"
   }
 }
