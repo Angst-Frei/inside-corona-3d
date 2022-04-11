@@ -34,6 +34,7 @@
     "element-resize-detector": "^1.2.4",
     "graphology": "^0.24.1",
     "graphology-communities-louvain": "^2.0.0",
+    "graphology-metrics": "^2.1.0",
     "graphology-shortest-path": "^2.0.0",
     "graphology-traversal": "^0.3.0",
     "three": "^0.139.2",
