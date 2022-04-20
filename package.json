@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "http-server -c-1 docs",
     "dev": "webpack --mode development && webpack --mode development -c webpack.config.visjs.js",
-    "build": "webpack --mode production && cp CNAME docs && webpack --mode production -c webpack.config.visjs.js"
+    "build": "webpack --mode production && cp CNAME docs"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +22,7 @@
     "http-server": "^14.1.0",
     "mini-css-extract-plugin": "^2.6.0",
     "npm-check-updates": "",
-    "sass": "^1.50.0",
+    "sass": "^1.50.1",
     "sass-loader": "^12.6.0",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
