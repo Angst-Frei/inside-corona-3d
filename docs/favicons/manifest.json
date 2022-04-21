@@ -1,7 +1,7 @@
 {
   "name": "inside-corona-3d",
   "short_name": "inside-corona-3d",
-  "description": "",
+  "description": "3D-Visualisierung der Grundlagen des Buches Inside Corona",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",

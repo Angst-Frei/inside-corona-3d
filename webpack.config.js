@@ -6,7 +6,6 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const buildDate = new Date().toISOString(); 
-const pageURL = "https://inside-corona.angst-frei.ch";
 const pageDescription = "3D-Visualisierung der Grundlagen des Buches Inside Corona";
 const pageTitle = "Inside Corona 3D";
 
@@ -31,7 +30,6 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       buildDate: buildDate,
-      pageURL: pageURL,
       pageTitle: pageTitle,
       pageDescription: pageDescription,
       scriptLoading: 'blocking',

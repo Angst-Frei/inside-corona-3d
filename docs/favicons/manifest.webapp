@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "name": "inside-corona-3d",
-  "description": "",
+  "description": "3D-Visualisierung der Grundlagen des Buches Inside Corona",
   "icons": {
     "60": "firefox_app_60x60.png",
     "128": "firefox_app_128x128.png",
