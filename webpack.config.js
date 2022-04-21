@@ -27,6 +27,7 @@ module.exports = {
     new FaviconsWebpackPlugin({
       logo: './src/graph.png',
       prefix: 'favicons/',
+      inject: true,
     }),
     new HtmlWebpackPlugin({
       buildDate: buildDate,
@@ -38,6 +39,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
+        { from: "src/robots.txt", to: "robots.txt" },
         { from: "src/img", to: "img" },
         { from: "src/json", to: "json" },
       ],
