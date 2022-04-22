@@ -1,0 +1,52 @@
+#graph {
+  height: 70vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+#info {
+  height: 30vh;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+body {
+  font: 11px 'Lucida Grande', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, p, img {
+  padding-left: 10px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px 5px 0px;
+  float: left;
+}
+
+span {
+    float: left;
+    clear: left;
+    display:inline
+}
+
+input[type=text] {
+  font: 11px 'Lucida Grande', sans-serif;
+  line-height: 13px;
+}
+
+select {
+  font: 11px 'Lucida Grande', sans-serif;
+  line-height: 13px;
+}
+
+.dg.main .c {
+  width: 50%;
+}
+.dg.main .property-name {
+  width: 50%;
+}
+

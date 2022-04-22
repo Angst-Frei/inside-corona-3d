@@ -2,5 +2,7 @@
 node_modules/
 scripts/
 resources/
-src/
+src/img/
+src/json/
+src/visjson/
 visjs/
