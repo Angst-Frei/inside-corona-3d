@@ -235,14 +235,8 @@ fetch('json/inside-corona.json').then(res => res.json()).then(gData => {
   generalFolder.add(settings, 'Hide Info Panel').listen().onChange( function() { 
     if (settings['Hide Info Panel']) {
       infoDiv.style.display = "none";
-      graphDiv.style.height = "100vh";
-      Graph
-        .height(graphDiv.offsetHeight)
     } else {
       infoDiv.style.display = "block";
-      graphDiv.style.height = "70vh";
-      Graph
-        .height(graphDiv.offsetHeight)
     }
   });
   generalFolder.open();

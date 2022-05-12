@@ -1,52 +1,82 @@
-#graph {
-  height: 70vh;
-  width: 100vw;
+* {
+  color: white;
+  font: 11px 'Lucida Grande', sans-serif;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.25rem 0;
+  text-transform: uppercase;
+}
+
+body {
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-#info {
-  height: 30vh;
-  overflow-y: scroll;
-  background-color: white;
-}
-
-body {
-  font: 11px 'Lucida Grande', sans-serif;
-  margin: 0;
-}
-
-h1, h2, h3, p, img {
-  padding-left: 10px;
-}
-
 img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   margin: 0px 10px 5px 0px;
-  float: left;
 }
 
-span {
-    float: left;
-    clear: left;
-    display:inline
+#info {
+  font-size: clamp(9px, 1vw, 12px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  max-width: 320px;
+  height: auto;
+  max-height: 100vh;
+  overflow: auto;
+  padding: 0 0.5rem;
+  background-color: black;
 }
 
-input[type=text] {
-  font: 11px 'Lucida Grande', sans-serif;
-  line-height: 13px;
+#info p {
+  margin: 1.25rem 0;
 }
 
-select {
-  font: 11px 'Lucida Grande', sans-serif;
-  line-height: 13px;
+#graph {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
-.dg.main .c {
-  width: 50%;
-}
-.dg.main .property-name {
-  width: 50%;
+div.main {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
+.dg .property-name {
+  width: 50% !important;
+  line-height: 27px !important;
+}
+
+.dg .c {
+  width: 50% !important;
+}
+
+.dg .has-slider input[type=text] {
+  width: 25% !important;
+  height: 19px !important;
+}
+
+.dg .slider {
+  width: 75% !important;
+}
+
+.dg .c select {
+  background: white !important;
+  color: black !important;
+  border: none !important;
+  width: 100% !important;
+}
+
+.dg .c input[type="checkbox"] {
+  margin-top: 6px !important;
+  float: right;
+}
