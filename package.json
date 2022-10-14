@@ -1,13 +1,13 @@
 {
   "name": "inside-corona-3d",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "3D-Visualisierung der Grundlagen des Buches Inside Corona",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "http-server -c-1 docs",
     "dev": "webpack --mode development && webpack --mode development -c webpack.config.visjs.js",
-    "build": "webpack --mode production && cp CNAME docs && zip -r inside-corona.zip docs/ && mv inside-corona.zip docs"
+    "build": "webpack --mode production && zip -r inside-corona_$npm_package_version.zip docs/ && cp CNAME docs"
   },
   "keywords": [],
   "author": "",

@@ -18,7 +18,7 @@ const generalText = `<h1>Inside Corona 3D</h1>
     <p>3D visualization of the basics of the book Inside Corona by Thomas Röper.</p>
     <p>The color of the links reflects the communites detected with <a href="https://en.wikipedia.org/wiki/Louvain_method" target = "_blank">Louvain</a> algorithm. The size of the nodes reflects the undirected ranking with <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a> algorithm.</p>
     <p><a href="mailto:3d-graph@protonmail.com">3d-graph@protonmail.com</a><br/>
-    Download the <a href="inside-corona.zip">webpage</a></p>
+    You are free to download and republish the <a href="https://t.me/+di15q84Lp8RkMTQ0">website</a>.</p>
     <p>This website was created with the following opensource software:<br/>
     <a href="https://github.com/vasturiano/3d-force-graph" target="_blank">3D Force-Directed Graph</a><br/>
     <a href="https://threejs.org/" target="_blank">three.js</a><br/>
