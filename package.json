@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "http-server -c-1 docs",
     "dev": "webpack --mode development && webpack --mode development -c webpack.config.visjs.js",
-    "build": "webpack --mode production && zip -r inside-corona_$npm_package_version.zip docs/ && cp CNAME docs"
+    "build": "webpack --mode production && cp README docs && zip -r inside-corona_$npm_package_version.zip docs/ && cp CNAME docs"
   },
   "keywords": [],
   "author": "",
