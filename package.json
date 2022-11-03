@@ -1,6 +1,6 @@
 {
   "name": "inside-corona-3d",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "3D-Visualisierung der Grundlagen des Buches Inside Corona",
   "private": true,
   "scripts": {

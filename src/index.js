@@ -14,8 +14,11 @@ import {bfsFromNode} from 'graphology-traversal/bfs';
 
 import './css/inside-corona.css';
 
+var VERSION = require("../package.json").version;
+
 const generalText = `<h1>Inside Corona 3D</h1>
     <p>3D visualization of the basics of the book Inside Corona by Thomas Röper.</p>
+    <p>Version: ` + VERSION + `
     <p>The color of the links reflects the communites detected with <a href="https://en.wikipedia.org/wiki/Louvain_method" target = "_blank">Louvain</a> algorithm. The size of the nodes reflects the undirected ranking with <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a> algorithm.</p>
     <p>Contact: <a href="mailto:3d-graph@protonmail.com">3d-graph@protonmail.com</a><br/>
     You are free to download and republish the <a href="https://drive.proton.me/urls/MVA97X3B1R#B0X2ad7loneh">website</a>.</p>
