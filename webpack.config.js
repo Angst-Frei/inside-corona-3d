@@ -30,6 +30,12 @@ module.exports = {
       logo: './src/graph.png',
       prefix: 'favicons/',
       inject: true,
+      favicons: {
+        appName: pageTitle,
+        appDescription: pageDescription,
+        background: '#000',
+        theme_color: '#000'
+      }
     }),
     new HtmlWebpackPlugin({
       buildDate: buildDate,

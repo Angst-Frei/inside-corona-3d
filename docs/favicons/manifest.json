@@ -1,14 +1,14 @@
 {
-  "name": "inside-corona-3d",
-  "short_name": "inside-corona-3d",
+  "name": "Inside Corona 3D",
+  "short_name": "Inside Corona 3D",
   "description": "3D-Visualisierung der Grundlagen des Buches Inside Corona",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
   "orientation": "any",
   "start_url": "/?homescreen=1",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#000",
+  "theme_color": "#000",
   "icons": [
     {
       "src": "android-chrome-36x36.png",
