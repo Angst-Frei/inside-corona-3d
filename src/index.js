@@ -14,16 +14,6 @@ import {bfsFromNode} from 'graphology-traversal/bfs';
 
 import './css/inside-corona.css';
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js').then(registration => {
-      console.log('SW registered: ', registration);
-    }).catch(registrationError => {
-      console.log('SW registration failed: ', registrationError);
-    });
-  }, { passive: true });
-}
-
 var VERSION = require("../package.json").version;
 
 const generalText = `<h1>Inside Corona 3D</h1>
@@ -332,6 +322,16 @@ fetch('json/inside-corona.json').then(res => res.json()).then(gData => {
     }
   };
   gui.add(help, 'add').name('Show Help'); 
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js').then(registration => {
+        console.log('SW registered: ', registration);
+      }).catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
+    }, { passive: true });
+  }
 
   function updateNodes() {
     let nodes = gData.nodes;
