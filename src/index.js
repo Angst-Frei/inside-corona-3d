@@ -21,7 +21,7 @@ if ('serviceWorker' in navigator) {
     }).catch(registrationError => {
       console.log('SW registration failed: ', registrationError);
     });
-  });
+  }, { passive: true });
 }
 
 var VERSION = require("../package.json").version;
