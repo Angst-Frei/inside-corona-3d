@@ -52,7 +52,8 @@ module.exports = {
       skipWaiting: true,
       exclude: [
         'img/BMBF_-_Bundesministerium_für_Bildung_und_Forschung.png',
-        'img/DIE_Deutsche_Institut_für_Entwicklungshilfe.png'
+        'img/DIE_Deutsche_Institut_für_Entwicklungshilfe.png',
+        'img/arrow-right.png'
       ],
     }),
     new CopyPlugin({
