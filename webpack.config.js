@@ -28,7 +28,7 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new FaviconsWebpackPlugin({
       logo: './src/graph.png',
-      prefix: '/',
+      prefix: '/favicons',
       inject: true,
       favicons: {
         appName: pageTitle,

@@ -56,6 +56,16 @@ const graphDiv = document.getElementById('graph');
 const graph = new UndirectedGraph();
 //const graph = new Graph();
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js').then(registration => {
+      console.log('SW registered: ', registration);
+    }).catch(registrationError => {
+      console.log('SW registration failed: ', registrationError);
+    });
+  }, { passive: true });
+}
+
 fetch('json/inside-corona.json').then(res => res.json()).then(gData => {
 
   gData.nodes.forEach(node => {
@@ -322,16 +332,6 @@ fetch('json/inside-corona.json').then(res => res.json()).then(gData => {
     }
   };
   gui.add(help, 'add').name('Show Help'); 
-
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js').then(registration => {
-        console.log('SW registered: ', registration);
-      }).catch(registrationError => {
-        console.log('SW registration failed: ', registrationError);
-      });
-    }, { passive: true });
-  }
 
   function updateNodes() {
     let nodes = gData.nodes;
