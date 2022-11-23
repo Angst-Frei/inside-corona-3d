@@ -51,7 +51,8 @@ module.exports = {
       clientsClaim: true,
       skipWaiting: true,
       exclude: [
-        'img/BMBF_-_Bundesministerium_für_Bildung_und_Forschung.png'
+        'img/BMBF_-_Bundesministerium_für_Bildung_und_Forschung.png',
+        'img/DIE_Deutsche_Institut_für_Entwicklungshilfe.png'
       ],
     }),
     new CopyPlugin({
