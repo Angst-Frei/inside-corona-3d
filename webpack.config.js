@@ -50,6 +50,9 @@ module.exports = {
       // and not allow any straggling "old" SWs to hang around
       clientsClaim: true,
       skipWaiting: true,
+      exclude: [
+        'img/BMBF_-_Bundesministerium_für_Bildung_und_Forschung.png'
+      ],
     }),
     new CopyPlugin({
       patterns: [
