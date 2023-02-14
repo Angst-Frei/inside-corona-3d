@@ -1,16 +1,13 @@
 # Installation
-
 - unzip and upload to webserver
 - done :-)
 
 # Change Log
 
 ## 1.2.2
-
 - change download to proton-drive
 
 ## 1.2.3
-
 - package updates
 
  - graphology                      0.25.0  →  0.25.1
@@ -19,13 +16,21 @@
  - sass-loader                     13.0.2  →  13.1.0
 
 ## 1.2.4
-
 - Version in Infobox
 
 ## 1.3.0
-
 - Make Page as PWA
 
 ## 1.3.1
-
 - fix PWA issues
+
+## 1.3.2
+- package updates
+
+ - 3d-force-graph           ^1.70.17  →   ^1.71.1
+ - three                    ^0.146.0  →  ^0.149.0
+ - css-loader                 ^6.7.2  →    ^6.7.3
+ - favicons                   ^7.0.2  →    ^7.1.0
+ - mini-css-extract-plugin    ^2.7.0  →    ^2.7.2
+ - sass                       1.56.1  →    1.58.1
+ - webpack-cli                ^5.0.0  →    ^5.0.1
