@@ -4,12 +4,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const SitemapPlugin = require('sitemap-webpack-plugin').default;
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const {GenerateSW} = require('workbox-webpack-plugin');
 const buildDate = new Date().toISOString(); 
+const pageURL = "https://inside-corona.angst-frei.ch/";
 const pageDescription = "3D-Visualisierung der Grundlagen des Buches Inside Corona";
 const pageTitle = "Inside Corona 3D";
+
+const paths = [
+  {
+    path: '/',
+    lastmod: buildDate
+  }
+];
 
 module.exports = {
   mode: 'production',
@@ -35,6 +44,16 @@ module.exports = {
         appDescription: pageDescription,
         background: '#000',
         theme_color: '#000'
+      }
+    }),
+    new SitemapPlugin({
+      base: pageURL,
+      paths,
+      options: {
+        filename: 'sitemap.xml',
+        lastmod: true,
+        changefreq: 'weekly',
+        priority: 1.0
       }
     }),
     new HtmlWebpackPlugin({

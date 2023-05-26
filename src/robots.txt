@@ -1,3 +1,4 @@
 User-agent: *
+Sitemap: https://inside-corona.angst-frei.ch/sitemap.xml
 Disallow: /json/
 Disallow: /img/
