@@ -19,35 +19,35 @@ var VERSION = require("../package.json").version;
 const generalText = `<h1>Inside Corona 3D</h1>
     <p>3D visualization of the basics of the book Inside Corona by Thomas Röper.</p>
     <p>Version: ` + VERSION + `
-    <p>The color of the links reflects the communites detected with <a href="https://en.wikipedia.org/wiki/Louvain_method" target = "_blank">Louvain</a> algorithm. The size of the nodes reflects the undirected ranking with <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a> algorithm.</p>
+    <p>The color of the links reflects the communites detected by the <a href="https://en.wikipedia.org/wiki/Louvain_method" target = "_blank">Louvain</a> algorithm. The size of the nodes reflects the undirected ranking with the <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a> algorithm.</p>
     <p>Contact: <a href="mailto:3d-graph@protonmail.com">3d-graph@protonmail.com</a><br/>
-    You are free to download and republish the <a href="https://drive.proton.me/urls/MVA97X3B1R#B0X2ad7loneh">website</a>.</p>
-    <p>This website was created with the following opensource software:<br/>
+    You are free to download and republish <a href="https://drive.proton.me/urls/MVA97X3B1R#B0X2ad7loneh">this site</a>.</p>
+    <p>This site was created with the following open source software:<br/>
     <a href="https://github.com/vasturiano/3d-force-graph" target="_blank">3D Force-Directed Graph</a><br/>
     <a href="https://threejs.org/" target="_blank">three.js</a><br/>
     <a href="https://graphology.github.io/" target="_blank">Graphology</a></p>`
 
 const helpText = `<h1>Help</h1>
-    <h2>Navigation</h2>
-    <p>Left-Click: Select and show info<br/>
-    Mouse-Wheel/Middle-Click: Zoom<br/>
-    Right-Click: Add node to filter<br/>
-    Shortest-Path: Select node and shift-select a second node to show the shortest path</p>
+    <h2>Navigate</h2>
+    <p>Left-click: Select and show info<br/>
+    Mouse-wheel/middle-click: Zoom in<br/>
+    Right-click: Add node to filter<br/>
+    Shortest Path: Select node and shift-click a second node to show the shortest path</p>
     <h2>Settings</h2>
     <h3>General</h3>
     <p>Simplify: Reduce the complexity by increasing the number of required neighbors<br/>
-    Link Length: Disable Link-Force and display links with the configured length<br/>
-    Hide Info Panel: Hide the bottom screen area with the information about nodes and links<br/>
-    Search: Search for nodes and links with regular expressions<br/>
+    Link Length: Disable Link Force and show links with the configured length<br/>
+    Hide Info Panel: Hide the Info Panel<br/>
+    Search: Search for nodes and links using regular expressions<br/>
     Filter: Filter (exclude/include) nodes<br/>
-    Filter Soley Nodes: Remove nodes without neighbors<br/>
+    Filter Soley Nodes: Remove nodes with no neighbors<br/>
     Zoom To Fit: Fit graph to screen<br/>
     Show Help: Show this help</p>
     <h3>Advanced</h3>
     <p>Orientation: Different layouts<br/>
-    Dimension: Switch from 3 to 2 dimension to change layout<br/>
-    Link Force: Enable Link-Force by respecting the number of neighbors of the attached nodes<br/>
-    Louvain-Communities: Communities detected with Louvain algorithm</p>`;
+    Dimension: Switching from 3 to 2 dimensionis to change the layout<br/>
+    Link Force: Enable Link Force by respecting the number of neighbors of the connected nodes<br/>
+    Louvain-Communities: Communities discovered with the Louvain algorithm</p>`;
 
 const infoDiv = document.getElementById('info');
 infoDiv.innerHTML = generalText;
